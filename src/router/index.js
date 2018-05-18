@@ -7,6 +7,7 @@ import News from '@/components/News'
 import Organization from '@/components/Organization'
 import Academics from '@/components/Academics'
 import Announcements from '@/components/Announcements'
+import Sitemap from '@/components/Sitemap'
 
 Vue.use(Router)
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/directorio',
       name: 'Phonebook',
       component: Phonebook
+    },
+    {
+      path: '/sitemap',
+      name: 'Sitemap',
+      component: Sitemap
     },
     {
       path: '/convocatorias',

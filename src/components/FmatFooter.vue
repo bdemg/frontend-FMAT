@@ -13,7 +13,7 @@
     </div>
     <div class="footer-buttons">
       <a href="#"><img src="../assets/fb.png" alt=""></a>
-      <a href="#" class="sitemap-button"> Mapa del <br> sitio </a>
+      <router-link to="/sitemap" class="sitemap-button"> <span @click="scrollMeToTop()">Mapa del <br> sitio</span></router-link>
     </div>
   </div>
 </template>
@@ -24,6 +24,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    scrollMeToTop () {
+      window.scrollTo(0, 0)
     }
   }
 }
@@ -88,7 +93,7 @@ export default {
       grid-column-gap: 115px;
       position: absolute;
     }
-    
+
     .legal{ display: none; }
   }
 
