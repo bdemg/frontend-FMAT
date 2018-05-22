@@ -3,6 +3,7 @@
     <router-link to="/" class="logo"> <img src="../assets/banner.png" alt="logo"> </router-link>
     <div class="top-bar">
       <div class="edu-links">
+        <div class="alt-logo"><router-link to="/"><img src="../assets/logo-small.png" alt="logo"></router-link></div>
         <a href="https://es.uadyvirtual.uady.mx/"><img src="../assets/uadyvirtual.png" alt="logo"></a>
         <a href="https://intranet.matematicas.uady.mx/enlinea2/"><img src="../assets/enlinea2.png" alt="logo"></a>
       </div>
@@ -52,7 +53,6 @@ export default {
 
   .edu-links{
     display: grid;
-    grid-template-columns: repeat(2, 98px);
     grid-column-gap: 8px;
     justify-items: center;
     align-items: center;
@@ -95,7 +95,10 @@ export default {
       margin: 0px 0px 0px;
       grid-template-columns: 1fr;
     }
-    .edu-links{ justify-self: center; }
+    .edu-links{
+      justify-self: center;
+      grid-template-columns: repeat(3, 98px);
+    }
 
     .logo{ display: none; }
 
@@ -103,6 +106,7 @@ export default {
       font-size: 16px;
       overflow: hidden;
     }
+    .alt-logo{ display: inherit; }
   }
 
   @media only screen and (min-width: 640px) {
@@ -116,10 +120,15 @@ export default {
 
     .logo{ display: inherit; }
 
-    .edu-links{ justify-self: end; }
+    .edu-links{
+      justify-self: end;
+      grid-template-columns: repeat(2, 98px);
+    }
 
     .nav{ font-size: inherit; }
 
     .van .icon { display: none; }
+
+    .alt-logo{ display: none; }
   }
 </style>
