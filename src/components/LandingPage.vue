@@ -91,16 +91,10 @@ export default {
   .slider-box p{ margin-bottom: 2rem; }
 
   .read-more{
-    width: 100px;
-    height: 54px;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
     font-family: inherit;
     font-size: 18px;
     color: white;
     text-align: center;
-    padding: 8px 8px 8px 8px;
     text-transform: uppercase;
   }
 
@@ -159,10 +153,18 @@ export default {
 
     .slider-box{ padding: 16px 0px; }
 
-    .slider-box h3{ margin-bottom: .7rem; }
+    .slider-box h3{ margin-bottom: .3rem; }
 
-    .slider-box p{ margin-bottom: 1.5rem; }
+    .slider-box p{ display: none; }
 
+    .read-more{
+      width: auto;
+      height: auto;
+      border-color: white;
+      border-width: 0px;
+      border-style: solid;
+      padding: 0px;
+    }
   }
 
   @media only screen and (min-width: 640px){
@@ -188,7 +190,19 @@ export default {
 
     .slider-box h3{ margin-bottom: .7rem; }
 
-    .slider-box p{ margin-bottom: 1.3rem; }
+    .slider-box p{
+      margin-bottom: 1.3rem;
+      display: inherit;
+    }
+
+    .read-more{
+      width: 100px;
+      height: 54px;
+      border-color: white;
+      border-width: 2px;
+      border-style: solid;
+      padding: 8px 8px 8px 8px;
+    }
 
   }
 
@@ -227,6 +241,18 @@ export default {
 
     .slider-box h3{ margin-bottom: 1.4rem;  }
 
-    .slider-box p{ margin-bottom: 2rem; }
+    .slider-box p{
+      margin-bottom: 2rem;
+      display: inherit;
+    }
+
+    .read-more{
+      width: 100px;
+      height: 54px;
+      border-color: white;
+      border-width: 2px;
+      border-style: solid;
+      padding: 8px 8px 8px 8px;
+    }
   }
 </style>

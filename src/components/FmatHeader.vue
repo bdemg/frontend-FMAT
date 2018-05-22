@@ -85,7 +85,10 @@ export default {
 
   @media only screen and (min-width: 150px) {
 
-    .nav-item h5{ margin-top: 20px; }
+    .nav-item h5{
+      margin-top: 20px;
+      font-size: 16px;
+    }
 
     .header{
       top: 0px;
@@ -104,7 +107,10 @@ export default {
 
   @media only screen and (min-width: 640px) {
 
-    .nav-item h5{ margin-top: 0.56em; }
+    .nav-item h5{
+      margin-top: 0.56em;
+      font-size: inherit;
+    }
 
     .header{ grid-template-columns: auto 1fr; }
 
