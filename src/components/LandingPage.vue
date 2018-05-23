@@ -24,7 +24,7 @@
     </div>
     <div class="announcements-section">
       <h1 class="section-header">Convocatorias</h1>
-      <p class="section-more" @click="scrollMeToTop()"><router-link to="/noticias">VER MÁS CONVOCATORIAS »</router-link></p>
+      <p class="section-more" @click="scrollMeToTop()"><router-link to="/convocatorias">VER MÁS CONVOCATORIAS »</router-link></p>
       <div class="showcase">
         <a href="#"><landing-announcements></landing-announcements></a>
         <a href="#"><landing-announcements></landing-announcements></a>
